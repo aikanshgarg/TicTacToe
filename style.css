@@ -1,0 +1,93 @@
+body{
+	background-image: url('wall.png');
+	margin:0;
+	padding:0;
+}
+
+h1{
+	font-size: 80px;
+	font-family: sans-serif;
+	text-align: center;
+	text-shadow:
+	1px 1px 0 #CCC,
+	2px 2px 0 #CCC, /* end of 2 level deep grey shadow */
+	3px 3px 0 #444,
+	4px 4px 0 #444,
+	5px 5px 0 #444,
+	1px 1px 0 #444; /* end of 4 level deep dark shadow */
+	-webkit-transition: all 0.12s ease-out;
+}
+h1:hover {
+ 	/* CSS3 Transform Effect */
+  	-webkit-transform: scale(1.2);
+ }
+
+td {
+	border: 5px solid #424242;
+	height: 150px;
+	width: 150px;
+	cursor: pointer;
+	font-size: 70px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-style: italic;
+	text-align: center;
+	color: black;
+}
+
+table {
+	border-collapse: collapse;
+	position: absolute;
+	left: 50%;
+	margin-left: -237.5px;/* (150+150+150+(5px*5))/2 */
+	top: 20%;
+}
+
+table tr:first-child td {
+	border-top: 0;
+}
+
+table tr:last-child td {
+	border-bottom: 0;
+}
+
+table tr td:first-child {
+	border-left: 0;
+}
+
+table tr td:last-child {
+	border-right: 0;
+}
+
+.endgame {
+    /*display: none;*/
+	width: 100%;
+	height: 10%;
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+	opacity: 0.7;
+	position: absolute;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	color: white;
+	font-size: 2em;
+	top: 75%;
+}
+.endgame button {
+	border: none;
+	font-size: 25px;
+	font-weight: bolder;
+	width: 100%;
+	height: 30%;
+background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+
+	cursor: pointer;
+}
+button:hover{
+	font-size: 50px;
+	/*color: ;*/
+}
+.endgame .text{
+	font-size: 30px;
+	color: #6A1B9A;
+	font-weight: bold;
+}
